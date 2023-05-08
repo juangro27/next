@@ -1,4 +1,4 @@
-import Database from "../../../database/db";
+import Database from "@/database";
 
 const allAvos = async (req, res) => {
     const data = await Database.getAll();
