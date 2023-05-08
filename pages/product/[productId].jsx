@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import Navbar from "../../components/Navbar";
 
 const ProductItem = () => {
     const [product, setProduct] = useState([]);
@@ -22,8 +21,6 @@ const ProductItem = () => {
     };
     return (
         <>
-            <Navbar />
-
             <h1>
                 ProductItem, id: {product?.id}, name {product?.name}
             </h1>
